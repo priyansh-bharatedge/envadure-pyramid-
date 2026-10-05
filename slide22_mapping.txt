@@ -1,0 +1,19 @@
+pic   at ( 3962400,   133350) : image18.png
+text  at ( 4800600,   133350) : Terrace & Parapet
+pic   at ( 7044344,  1174346) : image14.png
+pic   at (  171893,  1176393) : image19.jpeg
+pic   at ( 1066801,  1231607) : image11.png
+text  at ( 3710763,  1283812) : Balconies / Refuges
+pic   at ( 2963141,  1504950) : image16.jpeg
+text  at (   62010,  1881485) : External Walls
+text  at ( 7469369,  2121195) : Toilet / Kitchens
+pic   at ( 6726728,  2525836) : image13.png
+text  at ( 6477000,  3435771) : Podium / Driveways / Landscape / Basement Top
+pic   at ( 7620000,  3563130) : image12.png
+pic   at ( 2796157,  3733358) : image17.png
+text  at ( 2290154,  4060972) : Tanks
+pic   at (   70884,  4165305) : image15.png
+text  at ( 6597709,  4252561) : Basement / UG Structure
+text  at (  838200,  4733151) : Water Bodies / Pools
+text  at (  486838,  9162199) : A structure’s multiple surfaces need fit for purpose Waterproofing – Complex decision making needs a specialist approach  
+text  at (15087600,  9888490) : For Representation purpose Only

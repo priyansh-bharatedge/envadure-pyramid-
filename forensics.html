@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Failure Forensics & Root Causes (~150 Projects Study) | Pyramid Waterproofing & EnvaDure™</title>
+  <meta name="description" content="In-depth forensic study of 150+ failed waterproofing projects in India. Why 93% of leakages are preventable through proper specification design and QA/QC execution governance.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="extracted_assets/images/logo_tight.png">
+</head>
+<body>
+
+  <!-- Top Info Bar -->
+  <div class="header-top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <span class="top-bar-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+          Pan-India Advisory: Mumbai • Pune • NCR • Bengaluru • Hyderabad
+        </span>
+        <span class="top-bar-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          30+ Years Industry Leadership
+        </span>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-bar-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+919867524600">+91 9867524600</a>
+        </span>
+        <span class="top-bar-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:mehul@envadure.com">mehul@envadure.com</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-wrapper">
+        <img src="extracted_assets/images/logo_tight.png" alt="Pyramid Waterproofing & EnvaDure" class="brand-logo-img">
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services & Scope</a>
+        <a href="projects.html" class="nav-link">Landmark Projects</a>
+        <a href="forensics.html" class="nav-link active">Failure Forensics</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">
+          <span>Book Consultation</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About & Leadership Credentials</a>
+    <a href="services.html" class="nav-link">Services & Multi-Surface Scope</a>
+    <a href="projects.html" class="nav-link">Landmark Projects (35+ Showcase)</a>
+    <a href="forensics.html" class="nav-link active">150-Project Failure Forensics</a>
+    <a href="contact.html" class="nav-link">Contact & Technical Consultation</a>
+    <div style="margin-top: 1rem;">
+      <a href="tel:+919867524600" class="btn btn-primary" style="width: 100%; justify-content: center;">Call Mehul Parikh</a>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <section class="section" style="padding: 4rem 0 3rem; background: radial-gradient(circle at 80% 20%, rgba(244, 63, 94, 0.12) 0%, transparent 60%), var(--bg-secondary);">
+    <div class="container">
+      <div style="max-width: 820px;">
+        <div class="badge badge-rose" style="margin-bottom: 1rem;">Empirical Field Research</div>
+        <h1 style="font-size: 3rem; margin-bottom: 1.25rem;">
+          Why Buildings Leak: <span class="gradient-text-amber">Forensic Analysis</span> of ~150 Projects.
+        </h1>
+        <p style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.7;">
+          A rigorous examination of post-construction leakage investigations reveals a shocking reality: Over 93% of building leakages occur not because of material failure, but due to incorrect application and deficient specification design.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Why do Leakages take place after execution? -->
+  <section class="section" style="background: var(--bg-surface-alt); border-bottom: 1px solid var(--border-light);">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-amber">Root Cause Taxonomy • Confidential Discussion Draft</div>
+        <h2 class="section-title">Why do Leakages take place after execution ?</h2>
+        <p class="section-subtitle">
+          For Representation purpose Only
+        </p>
+      </div>
+
+      <div class="hero-grid" style="align-items: center; gap: 3rem; max-width: 1000px; margin: 0 auto;">
+        <div>
+          <div class="hero-image-frame" style="background: #ffffff; padding: 1.5rem; text-align: center;">
+            <img src="extracted_assets/images/image9.png" alt="Why Leakages Take Place - Fishbone Diagram" style="max-height: 280px; object-fit: contain; margin: 0 auto;">
+          </div>
+        </div>
+
+        <div>
+          <h3 style="font-size: 1.3rem; color: var(--text-dark); margin-bottom: 1rem;">All these factors are responsible in various ways :</h3>
+          <ul style="display: flex; flex-direction: column; gap: 0.6rem; padding-left: 1.25rem; color: var(--text-secondary); font-size: 1.05rem; line-height: 1.6;">
+            <li><strong>Product</strong></li>
+            <li><strong>Process</strong></li>
+            <li><strong>People</strong></li>
+            <li><strong>Leakages</strong></li>
+            <li><strong>Client</strong></li>
+            <li><strong>Environment</strong></li>
+            <li><strong>Machine</strong></li>
+          </ul>
+          <p style="margin-top: 1rem; font-size: 0.95rem; color: var(--brand-rose); font-weight: 600;">
+            All these factors are responsible in various ways
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Statistics & Failure Table  -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-rose">150-Project Empirical Analysis • Confidential Discussion Draft</div>
+        <h2 class="section-title">Our analysis of ~ 150 projects revealed this !!</h2>
+        <p class="section-subtitle">
+          For Representation purpose Only
+        </p>
+      </div>
+
+      <div style="max-width: 900px; margin: 0 auto;">
+        <table class="failure-data-table">
+          <thead>
+            <tr>
+              <th>Reason for Failure</th>
+              <th style="width: 150px; text-align: center;">No. Of Projects</th>
+              <th style="width: 140px; text-align: center;">% of Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Incorrect Application</strong></td>
+              <td style="text-align: center; font-weight: 700;">58</td>
+              <td style="text-align: center; color: var(--brand-rose); font-weight: 700;">38%</td>
+            </tr>
+            <tr>
+              <td><strong>Product Failure</strong></td>
+              <td style="text-align: center; font-weight: 700;">15</td>
+              <td style="text-align: center; color: var(--brand-teal); font-weight: 700;">10%</td>
+            </tr>
+            <tr>
+              <td><strong>Wrong System Selection or Incorrect Specification</strong></td>
+              <td style="text-align: center; font-weight: 700;">30</td>
+              <td style="text-align: center; color: var(--brand-rose); font-weight: 700;">20%</td>
+            </tr>
+            <tr>
+              <td><strong>Post application Damage due to improper sequence clarity</strong></td>
+              <td style="text-align: center; font-weight: 700;">23</td>
+              <td style="text-align: center; color: var(--brand-amber); font-weight: 700;">15%</td>
+            </tr>
+            <tr>
+              <td><strong>Inadequate Skill of technician</strong></td>
+              <td style="text-align: center; font-weight: 700;">15</td>
+              <td style="text-align: center; color: var(--brand-amber); font-weight: 700;">10%</td>
+            </tr>
+            <tr>
+              <td><strong>Improper Substrate due to deficient specification clarity</strong></td>
+              <td style="text-align: center; font-weight: 700;">11</td>
+              <td style="text-align: center; color: var(--text-muted); font-weight: 700;">7%</td>
+            </tr>
+            <tr style="background: rgba(13, 115, 107, 0.08); font-weight: 800; font-size: 1.05rem;">
+              <td><strong>Total</strong></td>
+              <td style="text-align: center; color: var(--text-dark);">152</td>
+              <td style="text-align: center; color: var(--brand-teal);">100%</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div style="margin-top: 2rem; padding: 1.75rem; background: #ffffff; border-radius: var(--radius-md); border-left: 4px solid var(--brand-rose); box-shadow: var(--shadow-sm);">
+          <ul style="margin: 0; padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem; font-size: 1rem; color: var(--text-dark);">
+            <li><strong>A glaring 48 % of leakages were taking place due to Application issues .</strong></li>
+            <li><strong>Next largest reason 45% was incorrect or deficient specification or wrong system selection.</strong></li>
+            <li style="color: var(--brand-teal); font-size: 1.15rem;"><strong>93 % issues can be avoided !!</strong></li>
+            <li><strong>Shows importance of correct system selection by a reliable Waterproofing Specialist</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Fundamental Reasons & Wrong Systems Selection -->
+  <section class="section" style="background: var(--bg-surface-alt);">
+    <div class="container">
+      <!-- Section -->
+      <div class="section-header" style="margin-bottom: 2.5rem;">
+        <div class="badge badge-rose">Fundamental Failure Vectors</div>
+        <h2 class="section-title">From the Analysis its Clear that Buildings Leak due to 5 fundamental reasons :</h2>
+      </div>
+
+      <div style="max-width: 900px; margin: 0 auto 3.5rem; background: var(--bg-surface); padding: 2.25rem; border-radius: 12px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+        <ol style="display: flex; flex-direction: column; gap: 0.85rem; font-size: 1.05rem; color: var(--text-dark); padding-left: 1.5rem; font-weight: 600;">
+          <li>Missed out areas of a structure that haven’t been waterproofed.</li>
+          <li>Wrong Systems Selection or Deficient Specifications</li>
+          <li>Application Errors</li>
+          <li>Damage to the installed waterproofing</li>
+          <li>Poor product quality</li>
+        </ol>
+        <div style="margin-top: 1.5rem; padding: 1rem 1.25rem; background: rgba(225, 29, 72, 0.08); border-left: 4px solid var(--brand-rose); border-radius: 6px; font-weight: 700; color: var(--brand-rose);">
+          Points 1 & 2 - Account for Nearly 45% of Failures, Remaining 3 Account for 55% cases
+        </div>
+      </div>
+
+      <!-- Section -->
+      <div class="section-header" style="margin-bottom: 2rem;">
+        <div class="badge badge-amber">Specification Breakdown</div>
+        <h2 class="section-title">Wrong Systems Selection or Deficient Specifications</h2>
+      </div>
+
+      <div class="hero-grid" style="align-items: center; gap: 2.5rem; max-width: 1050px; margin: 0 auto 3rem;">
+        <div>
+          <div class="hero-image-frame diagram-frame">
+            <img src="extracted_assets/images/image10.png" alt="Wrong Systems Selection or Deficient Specifications" class="contain-img">
+          </div>
+        </div>
+        <div>
+          <ul style="display: flex; flex-direction: column; gap: 0.85rem; padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-dark); line-height: 1.6;">
+            <li>Lack of subject matter expertise among those drafting BOQ specifications.</li>
+            <li>Copy-paste approach: same BOQ used across multiple projects without evaluating project-specific requirements.</li>
+            <li>No thought of local climate, geotechnical/ geographic factors, building use, Construction methodology, buildability, maintenance</li>
+            <li>Insufficiently drafted BOQ specifications; unclear system build-up and protection layers.</li>
+            <li>Mixed multi-brand specs causing confusion on specification intent.</li>
+            <li>Single-product manufacturer-led monopolistic specification.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 2rem; max-width: 1000px; margin: 0 auto;">
+        
+        <!-- Section: Reason 1 -->
+        <div class="card" style="border-top: 3px solid var(--brand-rose);">
+          <div style="display: flex; align-items: baseline; gap: 0.75rem; margin-bottom: 1rem;">
+            <span style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: var(--brand-rose);">Vector 01</span>
+            <h3 style="font-size: 1.3rem; color: var(--text-dark);">Missed out areas of a structure that haven’t been waterproofed</h3>
+          </div>
+          <div class="matrix-two-col" style="margin-top: 0;">
+            <div>
+              <h4 style="font-size: 0.95rem; text-transform: uppercase; color: var(--brand-rose); margin-bottom: 0.75rem;">Why this happens and resultant problems :</h4>
+              <ul style="padding-left: 1.15rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; display: flex; flex-direction: column; gap: 0.5rem;">
+                <li>Only standard surfaces ( like roofs , toilets , tanks, basement) considered while drafting BOQ – No in-depth study of project’s drawings to identify vulnerable that need waterproofing</li>
+                <li>Post award , Cost increases due to extra items getting executed at much higher prices – Typically what costs Re. 1/- during initial design phase estimation – can cost Rs. 2/- if identified later during execution and can cost upto Rs. 10/- as repair costs post hand-over.</li>
+                <li>Missed BOQ items or lack of scope clarity can result in potential disputes between Client , contractors, PMC</li>
+                <li>Developer’s brand image adversely impacted due – customer’s carry perception that critical areas seem omitted</li>
+              </ul>
+            </div>
+            <div>
+              <h4 style="font-size: 0.95rem; text-transform: uppercase; color: var(--brand-teal); margin-bottom: 0.75rem;">EnvaDure impact -</h4>
+              <ul style="padding-left: 1.15rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; display: flex; flex-direction: column; gap: 0.5rem;">
+                <li>Detailed engineering study of architectural and structural drawings , soil investigation report , geographical factors, planned usage , construction technique, future maintenance factors etc for holistic risk assessment to identify all locations that need waterproofing.</li>
+                <li>Aligned BOQ item list arrived at post detailed study, minimises risk of extra items and missed scope.</li>
+                <li>Architectural drawings marked up with locations that need waterproofing for easy correlation with BOQ items.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section: Reason 2 -->
+        <div class="card" style="border-top: 3px solid var(--brand-rose);">
+          <div style="display: flex; align-items: baseline; gap: 0.75rem; margin-bottom: 1rem;">
+            <span style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: var(--brand-rose);">Vector 02</span>
+            <h3 style="font-size: 1.3rem; color: var(--text-dark);">Wrong Systems Selection / Incorrect Specifications</h3>
+          </div>
+          <div class="matrix-two-col" style="margin-top: 0;">
+            <div>
+              <h4 style="font-size: 0.95rem; text-transform: uppercase; color: var(--brand-rose); margin-bottom: 0.75rem;">Why this happens and resultant problems :</h4>
+              <ul style="padding-left: 1.15rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; display: flex; flex-direction: column; gap: 0.5rem;">
+                <li>Lack of subject matter expertise with BOQ drafting team makers.</li>
+                <li>Adopting a copy paste approach of using one project’s BOQ across multiple projects without evaluating each individual project’s requirements.</li>
+                <li>Insufficiently drafted BOQ specifications that don’t provide clarity to bidders or project management teams – At times BOQ has a mix of multi brand based specs that creates confusion as specification intent isn’t clear.</li>
+                <li>Product manufacturer led BOQ can favour a specific brand – depriving client of a fair bidding process for best value option.</li>
+              </ul>
+            </div>
+            <div>
+              <h4 style="font-size: 0.95rem; text-transform: uppercase; color: var(--brand-teal); margin-bottom: 0.75rem;">EnvaDure impact -</h4>
+              <ul style="padding-left: 1.15rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; display: flex; flex-direction: column; gap: 0.5rem;">
+                <li>An independent brand agnostic neutral approach only driven by the project’s requirements.</li>
+                <li>A scientific approach towards fit for purpose based specifications design based on Indian and International standards and best practices.</li>
+                <li>Value engineered , Durability and Sustainability driven thought process.</li>
+                <li>Project biased and not product biased philosophy at the core.</li>
+                <li>No commercial involvement in entire process of bidding.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section: Reason 3 -->
+        <div class="card" style="border-top: 3px solid var(--brand-rose);">
+          <div style="display: flex; align-items: baseline; gap: 0.75rem; margin-bottom: 1rem;">
+            <span style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: var(--brand-rose);">Vector 03</span>
+            <h3 style="font-size: 1.3rem; color: var(--text-dark);">Erroneous Application done on site</h3>
+          </div>
+          <div class="matrix-two-col" style="margin-top: 0;">
+            <div>
+              <h4 style="font-size: 0.95rem; text-transform: uppercase; color: var(--brand-rose); margin-bottom: 0.75rem;">Why this happens and resultant problems :</h4>
+              <ul style="padding-left: 1.15rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; display: flex; flex-direction: column; gap: 0.5rem;">
+                <li>Untrained workmen , Insufficient supervision – outcome of selecting a waterproofing contractor only basis L1 pricing without a proper PQ process.</li>
+                <li>Project execution teams not knowing what to check , how to check and when to check during application</li>
+                <li>Specifications unclear about dealing with complex locations such as penetrations , interfaces , profile etc</li>
+                <li>Lack of clarity in method statements in dealing with complex site conditions.</li>
+                <li>No project specific customised cross section drawings available to enable waterproofing contractor and project team to understand intricacy of the waterproofing system installation & build-up at critical points.</li>
+                <li>Project teams and applicators unaware about material storage and material handling norms.</li>
+              </ul>
+            </div>
+            <div>
+              <h4 style="font-size: 0.95rem; text-transform: uppercase; color: var(--brand-teal); margin-bottom: 0.75rem;">EnvaDure impact -</h4>
+              <ul style="padding-left: 1.15rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; display: flex; flex-direction: column; gap: 0.5rem;">
+                <li>Project specific PQ criteria enabling client to select Waterproofing contractors who have capability to execute.</li>
+                <li>Detailed cross section drawings for all surfaces / BOQ items and step-wise detailed method statements.</li>
+                <li>Clearly defined Substrate parameters and ambient factors influencing application.</li>
+                <li>Clearly defined protocol for on-site tests to be performed.</li>
+                <li>Easy to implement QAQC check lists for monitoring the work being done by Waterproofing Contractor.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section: Reason 4 -->
+        <div class="card" style="border-top: 3px solid var(--brand-rose);">
+          <div style="display: flex; align-items: baseline; gap: 0.75rem; margin-bottom: 1rem;">
+            <span style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: var(--brand-rose);">Vector 04</span>
+            <h3 style="font-size: 1.3rem; color: var(--text-dark);">Damage to the waterproofing by other agencies</h3>
+          </div>
+          <div class="matrix-two-col" style="margin-top: 0;">
+            <div>
+              <h4 style="font-size: 0.95rem; text-transform: uppercase; color: var(--brand-rose); margin-bottom: 0.75rem;">Why this happens and resultant problems :</h4>
+              <ul style="padding-left: 1.15rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; display: flex; flex-direction: column; gap: 0.5rem;">
+                <li>Due to lack of proper activity sequence clarity in the specifications /method statements & unclear HOTO process between agencies.</li>
+                <li>Lack of clarity in specifications about how to protect, when to protect and who will do the protection to completed waterproofing.</li>
+              </ul>
+            </div>
+            <div>
+              <h4 style="font-size: 0.95rem; text-transform: uppercase; color: var(--brand-teal); margin-bottom: 0.75rem;">EnvaDure impact -</h4>
+              <ul style="padding-left: 1.15rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; display: flex; flex-direction: column; gap: 0.5rem;">
+                <li>Clearly defined scope matrix on technical parameters pertaining to HOTO between Waterproofing Contractor and Main Civil Contractor</li>
+                <li>Detailed method statements that defined sequential activity with clarity of time intervals involved in succeeding activities.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section: Reason 5 -->
+        <div class="card" style="border-top: 3px solid var(--brand-rose);">
+          <div style="display: flex; align-items: baseline; gap: 0.75rem; margin-bottom: 1rem;">
+            <span style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: var(--brand-rose);">Vector 05</span>
+            <h3 style="font-size: 1.3rem; color: var(--text-dark);">Due to Poor product quality</h3>
+          </div>
+          <div class="matrix-two-col" style="margin-top: 0;">
+            <div>
+              <h4 style="font-size: 0.95rem; text-transform: uppercase; color: var(--brand-rose); margin-bottom: 0.75rem;">Why this happens and resultant problems :</h4>
+              <ul style="padding-left: 1.15rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; display: flex; flex-direction: column; gap: 0.5rem;">
+                <li>Lack of Manufacturers Pre-qualification criteria.</li>
+                <li>Lack of knowledge in project team about what to check during product approval process, and what to test with testing frequency for product quality.</li>
+              </ul>
+            </div>
+            <div>
+              <h4 style="font-size: 0.95rem; text-transform: uppercase; color: var(--brand-teal); margin-bottom: 0.75rem;">EnvaDure impact -</h4>
+              <ul style="padding-left: 1.15rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; display: flex; flex-direction: column; gap: 0.5rem;">
+                <li>A neutral approach towards defining project specific PQ criteria enabling client to select Manufacturers/brands who can supply products meeting specification designs.</li>
+                <li>Clearly defined performance parameters for product approval</li>
+                <li>Clearly defined product testing protocols through 3rd party labs.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-title">PYRAMID <span>WATERPROOFING</span></div>
+          <p class="footer-brand-desc">
+            Independent, brand-agnostic technical advisory translating complex building science into highly customized, environmentally synced waterproofing specifications for structural durability and optimized asset life cycle value.
+          </p>
+          <img src="extracted_assets/images/logo_tight.png" alt="EnvaDure Logo" style="height: 48px; width: auto;">
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">Home Overview</a>
+            <a href="about.html">Mehul Parikh Credentials</a>
+            <a href="services.html">Multi-Surface Solutions</a>
+            <a href="projects.html">Landmark Projects Portfolio</a>
+            <a href="forensics.html">150-Project Failure Study</a>
+            <a href="contact.html">Consultation & Audit</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Engineering Solutions</h4>
+          <div class="footer-links">
+            <a href="services.html#basement">Subterranean Basements</a>
+            <a href="services.html#podium">Podiums & Green Roofs</a>
+            <a href="services.html#terrace">High-Exposure Terraces</a>
+            <a href="services.html#facade">External Building Envelopes</a>
+            <a href="services.html#tanks">Water Retaining Tanks</a>
+            <a href="services.html#pools">Olympic Pools & Water Bodies</a>
+            <a href="services.html#pretender">Pre-Tender BOQ Clauses</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Advisory Headquarters</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 0.75rem; color: var(--text-secondary);">
+            <strong>Mehul Parikh</strong><br>
+            Principal Waterproofing Consultant<br>
+            Former MD, Nina Percept
+          </p>
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
+            Phone: <a href="tel:+919867524600" style="color: var(--accent-teal-light); font-weight: 600;">+91 9867524600</a>
+          </p>
+          <p style="font-size: 0.9rem; margin-bottom: 1.25rem;">
+            Email: <a href="mailto:mehul@envadure.com" style="color: var(--accent-teal-light);">mehul@envadure.com</a>
+          </p>
+          <div class="social-links">
+            <a href="http://linkedin.com/in/mehul-parikh-47144579" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://wa.me/919867524600" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Pyramid Waterproofing Services & EnvaDure™ Advisory. All Rights Reserved.
+        </div>
+        <div>
+          BIS CED41 Sectional Committee Member • ICI Waterproofing Handbook Co-Author • Patented Technology
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-widget">
+    <a href="https://wa.me/919867524600?text=Hello%20Mehul%20Parikh,%20I%20would%20like%20to%20consult%20regarding%20failure%20prevention." class="floating-btn whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      <span class="floating-tooltip">Chat with Mehul Parikh</span>
+    </a>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
