@@ -2463,25 +2463,7 @@ h1, h2, h3, h4, h5, h6 {
    Sticky Bottom Conversion Pill
    ========================================================================== */
 .sticky-conversion-bar {
-  position: fixed;
-  bottom: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%) translateY(120px);
-  z-index: 980;
-  background: rgba(9, 14, 23, 0.92);
-  backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: var(--radius-full);
-  padding: 0.6rem 0.85rem 0.6rem 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.sticky-conversion-bar.visible {
-  transform: translateX(-50%) translateY(0);
+  display: none !important;
 }
 
 .sticky-conv-text {
